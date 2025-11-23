@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>TODO LIST!</title>
+</head>
+<body>
+  <h1>TODO APP</h1>
+  <input id="taskInput" placeholder="Enter your task" />
+  <button id="addBtn">Add Task</button>
+
+  <ul>
+    <li>EAT <button class="delete">Delete</button></li>
+    <li>SLEEP <button class="delete">Delete</button></li>
+  </ul>
+
+  <script src="todoapp.js"></script>
+</body>
+</html>
