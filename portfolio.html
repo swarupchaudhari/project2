@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2 class="logo">My Portfolio</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HOME SECTION -->
+<section id="home" class="home-section">
+    <h1>Hello, I'm <span>Your Name</span></h1>
+    <p>Web Developer | Designer | Programmer</p>
+    <button onclick="scrollToSection('contact')">Hire Me</button>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="about-section">
+    <h2>About Me</h2>
+    <p>
+        I am a web developer who creates beautiful and functional websites.
+        I love coding and building user-friendly applications.
+    </p>
+</section>
+
+<!-- PROJECT SECTION -->
+<section id="projects" class="project-section">
+    <h2>My Projects</h2>
+
+    <div class="project-box">
+        <h3>Project 1</h3>
+        <p>A simple website built using HTML, CSS, JS.</p>
+    </div>
+
+    <div class="project-box">
+        <h3>Project 2</h3>
+        <p>Responsive web design with animations.</p>
+    </div>
+
+    <div class="project-box">
+        <h3>Project 3</h3>
+        <p>Mini web application using JavaScript.</p>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+
+    <form action="sendmail.php" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<script src="portfolio.js"></script>
+</body>
+</html>
